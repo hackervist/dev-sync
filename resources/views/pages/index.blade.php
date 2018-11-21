@@ -28,7 +28,7 @@
 
     <h1>Dev-sync </h1>
 
-    <p>Collaborating made easy.
+    <p>Collaboration made easy.
     </p>
     <img src="/images/vcollab.jpg" alt="Smiley face" >
 

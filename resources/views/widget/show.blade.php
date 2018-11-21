@@ -24,30 +24,46 @@
         <table class="table table-striped">
             <tr>
 
-                <th>Id</th>
+               
                 <th>Name</th>
-                <th>Date Created</th>
+                <th>Description</th>
+                <th>Last Updated</th>
+                
+
                 @if(Auth::user()->adminOrCurrentUserOwns($widget))
+                   
+                    <th>Contribute</th>
                     <th>Edit</th>
+                   <th>Delete</th>
                 @endif
-                <th>Delete</th>
+             
 
             </tr>
 
 
             <tr>
-                <td>{{ $widget->id }} </td>
+               
                 <td> <a href="/widget/{{ $widget->id }}/edit">
                         {{ $widget->name }}</a></td>
-                <td>{{ $widget->created_at }}</td>
+              
+                <td> {{$widget->description }} </td>
+                
+                <td>{{ $widget->updated_at }}</td>
+
 
                 @if(Auth::user()->adminOrCurrentUserOwns($widget))
+
+                    <td> <a href="{{$widget->link_address}}">
+
+                            <button type="button" class="btn btn-default">Contribu</button></a></td>
+
+
 
                     <td> <a href="/widget/{{ $widget->id }}/edit">
 
                             <button type="button" class="btn btn-default">Edit</button></a></td>
 
-                @endif
+            
 
                 <td>
                     <div class="form-group">
@@ -61,6 +77,12 @@
                         </form>
                     </div>
                 </td>
+
+               
+                
+
+                @endif
+            
 
             </tr>
 

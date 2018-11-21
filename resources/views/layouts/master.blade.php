@@ -8,7 +8,7 @@
 
     @include('layouts.css')
 
-    @yield('css')
+    @yield('css') <!--includes the dojo-->
 
 </head>
 
@@ -19,7 +19,7 @@
 @include('layouts.nav')
 
 <div class="container theme-showcase" role="main">
-
+@yield('js') <!--The dojo-->
     @yield('content')
 
     @include('layouts.bottom')
@@ -29,7 +29,7 @@
 @include('layouts.scripts')
 
 @include('Alerts::show')
-
+@yield('js') <!--The dojo-->
 @yield('scripts')
 
 </body>

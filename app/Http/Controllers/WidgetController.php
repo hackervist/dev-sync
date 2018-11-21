@@ -16,8 +16,10 @@ class WidgetController extends Controller
 
     public function __construct()
     {
+      //  $this->middleware('auth');
+        
         // $this->middleware(['auth', 'admin']);
-        $this->middleware(['auth', 'admin'], ['except' => ['index', 'show','create', 'store', 'edit', 'realtime', 'showFile']] );
+        $this->middleware(['auth', 'admin'], ['except' => ['index', 'show','create', 'store','update', 'edit', 'realtime', 'showFile']] );
         //$this->middleware('admin', ['except' => ['index', 'show']]);
 
     }
@@ -35,7 +37,7 @@ class WidgetController extends Controller
     }
     
     //fetches content of file from google and loads it to a LOCKED text area
-    puclic function showFile($id)
+    public function showFile($id)
     {
        // use ID to get the lick of the file
 
@@ -90,7 +92,7 @@ class WidgetController extends Controller
         $widget = Widget::create(['name' => $request->name,
                                   'slug' => $slug,
                                   'user_id' => Auth::id(),
-                                'link_address'=> $request->fullUrl(),
+                                'link_address'=> $request->HDN_FormClicked,
                                 'description' => $request->description,
                               ]);
 
@@ -156,20 +158,30 @@ class WidgetController extends Controller
             'name' => 'required|string|max:30|unique:widgets,name,' .$id
 
         ]);
+        $this->validate($request, [
+            'description' => 'required|string|max:255|unique:widgets,description,' .$id
+
+        ]);
+
+
+
+
+
 
         $widget = Widget::findOrFail($id);
 
         if ( ! $this->adminOrCurrentUserOwns($widget)){
 
-            throw new UnauthorizedException;
+           throw new UnauthorizedException;
 
-        }
+       }
 
         $slug = str_slug($request->name, "-");
 
         $widget->update(['name' => $request->name,
                          'slug' => $slug,
-                         'user_id' => Auth::id()]);
+                         'description' => $request->description
+                         ]);
 
         alert()->success('Congrats!', 'You updated a widget');
 

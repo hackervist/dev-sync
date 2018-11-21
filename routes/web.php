@@ -11,6 +11,16 @@
 |
 */
 
+// using the MAIl controller to implement the INVITE 
+Route::get('invites', 'MailController@readInvite');
+Route::post('inviteMail', 'MailController@emailInvite');
+
+
+
+// Email related routes
+Route::get('mail/send', 'MailController@send');
+
+
 // Admin route
 
 

@@ -37,7 +37,6 @@
                     <td><a href="/profile/{{ $profile->id }}">{{ $profile->fullName() }}</a></td>
                     <td>{{ $profile->showGender($profile->gender) }}</td>
                     <td>{{ $profile->birthdate->format('m-d-Y') }}</td>
-
                 </tr>
 
             @endforeach

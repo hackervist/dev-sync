@@ -71,6 +71,9 @@ class RegisterController extends Controller
     {
         $data['is_subscribed'] = empty($data['is_subscribed']) ? 0 : 1;
 
+
+        alert()->success('Congrats!', 'You have successfully registered');
+        
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],

@@ -1,7 +1,11 @@
 /node_modules
 /public/storage
+/public/downFiles
 
 /.idea
 Homestead.json
 Homestead.yaml
 .env
+
+/resources/views/about.blade.php
+/vendor

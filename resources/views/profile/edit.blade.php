@@ -71,6 +71,27 @@
 
         </div>
 
+         <!-- last_name Form Input -->
+
+        <div class="form-group{{ $errors->has('last_name') ? ' has-error' : '' }}">
+
+            <label class="control-label">Last Name</label>
+
+            <input type="text" class="form-control" name="last_name" value="{{  $profile->last_name }}">
+
+            @if ($errors->has('last_name'))
+
+                <span class="help-block">
+                <strong>{{ $errors->first('last_name') }}</strong>
+                </span>
+
+            @endif
+
+        </div>
+
+
+        
+
         <!-- birthdate Form Input -->
 
         <div class="form-group{{ $errors->has('birthdate') ? ' has-error' : '' }}">

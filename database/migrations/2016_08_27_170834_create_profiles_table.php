@@ -19,8 +19,9 @@ class CreateProfilesTable extends Migration
             $table->string('first_name', 60);
             $table->string('last_name', 60);
             $table->date('birthdate');
+           // $table->date('id_num',13);
             $table->boolean('gender');
-            $table->timestamps();
+            $table->timestamps(); // counts for CREATED AT and UPDATED AT
         });
     }
 

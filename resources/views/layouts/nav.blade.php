@@ -41,7 +41,9 @@
                     <ul class="dropdown-menu">
                         <li><a href="/widget/collab">Collaborate</a></li>
                         <li><a href="/widget">Documents</a></li>
-                        
+                        <li><a href="/invites">Invites</a></li>
+                        <li><a href="/forums">Forum</a></li>
+
                         @if (Auth::check() && Auth::user()->isAdmin())
                             <li><a href="/marketing-image">Banner Images</a></li>
                         @endif

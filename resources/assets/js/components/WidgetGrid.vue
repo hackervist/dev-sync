@@ -31,7 +31,8 @@
                                 {{row.Id}}
                             </td>
                             <td>
-                                <a href="/widget/{{row.Id}}-{{row.slug}}">{{row.Name}}</a>
+                                    {{row.Name}}
+                                <!--a href="/widget/{{row.Id}}-{{row.slug}}">{{row.Name}}</a-->
                             </td>
                             <td>
                                 {{row.Created }}

@@ -27,7 +27,7 @@
 
     <!-- widget_name Form Input -->
         <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-            <label class="control-label">Documenet Name</label>
+            <label class="control-label">Document Name</label>
 
             <input type="text" class="form-control" name="name" value="{{ $widget->name }}">
 
@@ -38,6 +38,26 @@
             @endif
 
         </div>
+
+
+          <!-- widget_description Form Input -->
+        <div class="form-group{{ $errors->has('description') ? ' has-error' : '' }}">
+            <label class="control-label">Document Description</label>
+
+            <input type="text" class="form-control" name="description" value="{{ $widget->description }}">
+
+            @if ($errors->has('description'))
+                <span class="help-block">
+                                        <strong>{{ $errors->first('description') }}</strong>
+                                    </span>
+            @endif
+
+        </div>
+
+
+
+
+
 
         <div class="form-group">
             <button type="submit" class="btn btn-primary btn-lg">

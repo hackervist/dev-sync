@@ -9,15 +9,18 @@ class ComposerStaticInitd0061814658127247046c67b1ae7085c
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         '1d1b89d124cc9cb8219922c9d5569199' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest.php',
-        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
-        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
+        '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         'e7223560d890eab89cda23685e711e2c' => __DIR__ . '/..' . '/psy/psysh/src/Psy/functions.php',
         'bd9634f2d41831496de0d3dfe4c94881' => __DIR__ . '/..' . '/symfony/polyfill-php56/bootstrap.php',
+        '5236d8dd5c74f7c67fa5cedfeeaccc96' => __DIR__ . '/..' . '/luketowers/purifier/src/helpers.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
         'f0906e6318348a765ffb6eb24e0d0938' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
         '58571171fd5812e6e447dce228f52f4d' => __DIR__ . '/..' . '/laravel/framework/src/Illuminate/Support/helpers.php',
         'f18cc91337d49233e5754e93f3ed9ec3' => __DIR__ . '/..' . '/laravelcollective/html/src/helpers.php',
@@ -26,6 +29,7 @@ class ComposerStaticInitd0061814658127247046c67b1ae7085c
     public static $prefixLengthsPsr4 = array (
         'p' => 
         array (
+            'phpseclib\\' => 10,
             'phpDocumentor\\Reflection\\' => 25,
         ),
         'X' => 
@@ -66,6 +70,7 @@ class ComposerStaticInitd0061814658127247046c67b1ae7085c
             'Psy\\' => 4,
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
+            'Psr\\Cache\\' => 10,
             'PhpParser\\' => 10,
         ),
         'M' => 
@@ -74,6 +79,7 @@ class ComposerStaticInitd0061814658127247046c67b1ae7085c
         ),
         'L' => 
         array (
+            'LukeTowers\\Purifier\\' => 20,
             'League\\OAuth1\\' => 14,
             'League\\Flysystem\\' => 17,
             'Laravel\\Tinker\\' => 15,
@@ -89,9 +95,11 @@ class ComposerStaticInitd0061814658127247046c67b1ae7085c
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+            'Google\\Auth\\' => 12,
         ),
         'F' => 
         array (
+            'Firebase\\JWT\\' => 13,
             'Faker\\' => 6,
         ),
         'D' => 
@@ -99,6 +107,7 @@ class ComposerStaticInitd0061814658127247046c67b1ae7085c
             'Dotenv\\' => 7,
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\Common\\Inflector\\' => 26,
+            'DevDojo\\Chatter\\' => 16,
             'DeepCopy\\' => 9,
         ),
         'C' => 
@@ -115,6 +124,10 @@ class ComposerStaticInitd0061814658127247046c67b1ae7085c
     );
 
     public static $prefixDirsPsr4 = array (
+        'phpseclib\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
+        ),
         'phpDocumentor\\Reflection\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
@@ -217,6 +230,10 @@ class ComposerStaticInitd0061814658127247046c67b1ae7085c
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
+        'Psr\\Cache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
         'PhpParser\\' => 
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
@@ -224,6 +241,10 @@ class ComposerStaticInitd0061814658127247046c67b1ae7085c
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'LukeTowers\\Purifier\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/luketowers/purifier/src',
         ),
         'League\\OAuth1\\' => 
         array (
@@ -261,6 +282,14 @@ class ComposerStaticInitd0061814658127247046c67b1ae7085c
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'Google\\Auth\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/auth/src',
+        ),
+        'Firebase\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
+        ),
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
@@ -276,6 +305,10 @@ class ComposerStaticInitd0061814658127247046c67b1ae7085c
         'Doctrine\\Common\\Inflector\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Common/Inflector',
+        ),
+        'DevDojo\\Chatter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/devdojo/chatter/src',
         ),
         'DeepCopy\\' => 
         array (
@@ -333,23 +366,53 @@ class ComposerStaticInitd0061814658127247046c67b1ae7085c
                 0 => __DIR__ . '/..' . '/jakub-onderka/php-console-color/src',
             ),
         ),
+        'H' => 
+        array (
+            'HTMLPurifier' => 
+            array (
+                0 => __DIR__ . '/..' . '/ezyang/htmlpurifier/library',
+            ),
+        ),
+        'G' => 
+        array (
+            'Google_Service_' => 
+            array (
+                0 => __DIR__ . '/..' . '/google/apiclient-services/src',
+            ),
+            'Google_' => 
+            array (
+                0 => __DIR__ . '/..' . '/google/apiclient/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
+        'AddChatterLastReplyAtDiscussion' => __DIR__ . '/../..' . '/database/migrations/2017_10_10_221227_add_chatter_last_reply_at_discussion.php',
+        'AddChatterSoftDeletes' => __DIR__ . '/../..' . '/database/migrations/2017_08_07_165345_add_chatter_soft_deletes.php',
+        'AddColorRowToChatterDiscussions' => __DIR__ . '/../..' . '/database/migrations/2016_08_03_121747_add_color_row_to_chatter_discussions.php',
         'AddImageWeightToMarketingImagesTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_30_025841_add_image_weight_to_marketing_images_table.php',
-        'AddIsAdminAndStatusIdColumnsToUsersTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_21_222431_add_is_admin_and_status_id_columns_to_users_table.php',
-        'AddIsSubscribedToUsersTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_22_010432_add_is_subscribed_to_users_table.php',
+        'AddMarkdownAndLockToChatterPosts' => __DIR__ . '/../..' . '/database/migrations/2017_01_16_121747_add_markdown_and_lock_to_chatter_posts.php',
+        'AddSlugFieldForDiscussions' => __DIR__ . '/../..' . '/database/migrations/2016_08_02_183143_add_slug_field_for_discussions.php',
+        'ChatterTableSeeder' => __DIR__ . '/../..' . '/database/seeds/ChatterTableSeeder.php',
+        'CreateChatterCategoriesTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_29_171118_create_chatter_categories_table.php',
+        'CreateChatterDiscussionTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_29_171118_create_chatter_discussion_table.php',
+        'CreateChatterPostTable' => __DIR__ . '/../..' . '/database/migrations/2016_07_29_171118_create_chatter_post_table.php',
+        'CreateChatterUserDiscussionPivotTable' => __DIR__ . '/../..' . '/database/migrations/2017_01_16_121747_create_chatter_user_discussion_pivot_table.php',
+        'CreateForeignKeys' => __DIR__ . '/../..' . '/database/migrations/2016_07_29_171128_create_foreign_keys.php',
         'CreateGadgetsTable' => __DIR__ . '/../..' . '/database/migrations/2016_09_13_215622_create_gadgets_table.php',
+        'CreateMailCollabsTable' => __DIR__ . '/../..' . '/database/migrations/2018_11_14_191224_create_mail_collabs_table.php',
         'CreateMarketingImagesTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_28_195122_create_marketing_images_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateProfilesTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_27_170834_create_profiles_table.php',
         'CreateSocialProvidersTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_25_001255_create_social_providers_table.php',
-        'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
+        'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2018_04_29_205756_create_users_table.php',
         'CreateWidgetsTable' => __DIR__ . '/../..' . '/database/migrations/2016_08_20_171341_create_widgets_table.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'File_Iterator' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Iterator.php',
         'File_Iterator_Facade' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Facade.php',
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
+        'Google_Service_Exception' => __DIR__ . '/..' . '/google/apiclient/src/Google/Service/Exception.php',
+        'Google_Service_Resource' => __DIR__ . '/..' . '/google/apiclient/src/Google/Service/Resource.php',
         'Hamcrest\\Arrays\\IsArray' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArray.php',
         'Hamcrest\\Arrays\\IsArrayContaining' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContaining.php',
         'Hamcrest\\Arrays\\IsArrayContainingInAnyOrder' => __DIR__ . '/..' . '/hamcrest/hamcrest-php/hamcrest/Hamcrest/Arrays/IsArrayContainingInAnyOrder.php',

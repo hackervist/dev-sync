@@ -7,8 +7,7 @@
 
 <script>
 
-      document.getElementById("text_area_2").style.display = "none"; 
-
+      document.getElementById("text_area_2").style.display = "none";
 
  	
       var clientId = '725671183042-h30bmsr8svm8dqea8oli72ppb7edgkks.apps.googleusercontent.com';
@@ -48,11 +47,22 @@
           // Load the document id from the URL
           realtimeUtils.load(id.replace('/', ''), onFileLoaded, onFileInitialize);
         } else {
+
+          // upon loading the document, remove the name, desc and button controls
+          document.getElementById("btnSave").disabled = true;
+          document.getElementById("btnSave").style.visibility = 'hidden';
+          document.getElementById("txtName").style.visibility = 'hidden';
+
+          document.getElementById("txtName").disabled = true;
+          document.getElementById("txtDesc").disabled = true;
+
           // Create a new document, add it to the URL
-          realtimeUtils.createRealtimeFile('New Dev File June 6', function(createResponse) {
+          realtimeUtils.createRealtimeFile('New Dev-sync File Nov 12', function(createResponse) {
             window.history.pushState(null, null, '?id=' + createResponse.id);
             realtimeUtils.load(createResponse.id, onFileLoaded, onFileInitialize);
           });
+
+         
         }
       }
 
@@ -61,7 +71,7 @@
       // to our model at the root.
       function onFileInitialize(model) {
         var string = model.createString();
-        string.setText('Welcome to the Dev-Sync App local June 6!');
+        string.setText('Welcome to the Dev-Sync App local November 12!');
         model.getRoot().set('demo_string', string);
       }
 
